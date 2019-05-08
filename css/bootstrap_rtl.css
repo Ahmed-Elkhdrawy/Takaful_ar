@@ -112,7 +112,7 @@ body {
 .card-btn span:nth-child(4) {
     width: 75%;
     -webkit-transform: translate(0px) rotate(6deg) skew(7deg);
-    transform: translate(0px) rotate(6deg) skew(7deg);
+    transform: translate(.5px) rotate(6deg) skew(7deg);
 }
 
 /*request*/
