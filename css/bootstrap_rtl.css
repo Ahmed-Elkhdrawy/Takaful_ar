@@ -1,0 +1,246 @@
+body {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    text-align: right;
+}
+
+:root {
+    --mcolor1: rgba(47, 137, 252, 1);
+    --mcolor2: rgba(85, 251, 194, 1);
+    --pcolor: rgba(128, 128, 128, .8);
+    --bodyc: #f7f9fc;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+@media (min-width:768px) {
+    .navbar-header {
+        float: right;
+    }
+
+    .navbar-collapse .navbar-form input {
+        float: left !important;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-collapse .navbar-form .btn {}
+
+    .navbar-expand-lg > .container-fluid {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse
+    }
+}
+
+@media (min-width:992px) {
+    
+    .main-nav .navbar-collapse .navbar-form > * {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+.our-slider .slid-content .slid-heading span:first-child,
+.our-slider .slid-content .slid-heading {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.navbar-collapse .navbar-form .search {
+    left: 0;
+    right: auto;
+    border-left: none;
+    border-right: 1px solid #ccc;
+    ;
+}
+
+.card-btn span {
+    width: 90%;
+}
+
+.our-slider .slid-content .slid-heading .span {
+    width: 100%;
+    right: -20px;
+    -webkit-box-shadow: -5px 0 0 0 #000;
+    box-shadow: -5px 0 0 0 #000;
+}
+
+.our-slider .slid-content a span {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: -5px 0 0 0 rgba(47, 136, 252, 1);
+    box-shadow: -5px 0 0 0 rgba(47, 136, 252, 1);
+}
+
+.our-slider .carousel-indicators {
+    left: -20px !important;
+    right: auto !important;
+}
+
+@-webkit-keyframes come-left {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes come-left {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+.card-btn span:nth-child(2) {
+    width: 75%;
+    -webkit-transform: translate(-16px) rotate(-4deg);
+    transform: translate(-16px) rotate(-4deg);
+}
+
+.card-btn span:nth-child(4) {
+    width: 75%;
+    -webkit-transform: translate(0px) rotate(6deg) skew(7deg);
+    transform: translate(0px) rotate(6deg) skew(7deg);
+}
+
+/*request*/
+.form-request .form-group .sel-but {
+    left: 0;
+    right: auto !important;
+}
+
+/*medical*/
+.others label i,
+.medical label i {
+    margin-right: 5px;
+}
+
+.medical .sel-but {
+    left: 0;
+    right: auto !important;
+}
+
+/*contact page*/
+.footer .social-icons a + a,
+.contact-details .social-icons a + a {
+    margin-right: 10px !important;
+    margin-left: 0 !important;
+}
+
+.sections .row2 .sec2 ul li i {
+    margin-left: 10px;
+}
+
+/*company page*/
+.company-info li {
+    letter-spacing: 0px;
+    word-spacing: 3px;
+}
+
+.company-info li span {
+    font-size: 16px;
+}
+
+/*services*/
+@media (min-width: 1199px) {
+    .services .serv-icon {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+
+.service .serv-brif a {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+.footer .social i {
+    padding: 8px 9px 0 0;
+    margin-left: 15px;
+}
+
+.footer .social li:hover {
+    margin-right: 15px;
+}
+
+.footer .copy-right {
+    float: left;
+}
+
+/* our net */
+.ouer-net {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.net-collect .ouer-net .net {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: #000;
+    margin-bottom: 40px;
+}
+
+.net-collect .ouer-net img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: .9;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.net-collect .ouer-net a {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 2;
+    color: #fff !important;
+}
+
+.net-collect .ouer-net .net:hover img {
+    opacity: .5;
+}
+
+.net-collect .ouer-net .net:hover a {
+    font-size: 17px;
+}
